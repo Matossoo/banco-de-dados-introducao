@@ -1,0 +1,52 @@
+📌 Pesquisa de Notações – Modelo Entidade-Relacionamento (MER)
+🔷 Entidade Forte
+
+É uma entidade que existe de forma independente, ou seja, não precisa de outra entidade para ser identificada.
+
+Possui chave primária própria
+Representa objetos principais do sistema
+
+Exemplo:
+Cliente (id_cliente, nome, cpf)
+
+🔷 Entidade Fraca
+
+É uma entidade que depende de outra entidade (forte) para existir.
+
+Não possui chave primária completa sozinha
+Precisa de uma chave parcial + chave da entidade forte
+Está sempre ligada a um relacionamento identificador
+
+Exemplo:
+Dependente (nome, idade) → depende de Funcionário
+
+🔷 Relacionamento Identificador
+
+É o relacionamento que liga uma entidade fraca à sua entidade forte.
+
+É obrigatório para a existência da entidade fraca
+Representado com linha dupla no diagrama
+Define a identificação da entidade fraca
+
+Exemplo:
+Funcionário → possui → Dependente
+
+🔷 Atributo Multivalorado
+
+É um atributo que pode ter mais de um valor para a mesma entidade.
+
+Representado por oval dupla no MER
+Indica repetição de valores
+
+Exemplo:
+Cliente → telefones (um cliente pode ter vários números)
+
+🔷 Atributo Composto
+
+É um atributo que pode ser dividido em partes menores.
+
+Representa informações detalhadas
+Cada parte pode ser usada separadamente
+
+Exemplo:
+Endereço → rua, número, cidade, CEP
