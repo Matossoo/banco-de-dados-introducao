@@ -1,0 +1,27 @@
+Atividade 01 – Lojinha
+Visão Geral
+
+O modelo representa uma lojinha, controlando clientes, vendas, produtos, pagamentos, fornecedores e estoque.
+
+Entidades
+Cliente
+Venda
+Pagamento
+Produto
+Fornecedor
+Estoque
+Item_Venda (associativa)
+Relacionamentos
+Cliente — Venda:
+Um cliente pode fazer várias vendas, mas cada venda pertence a um cliente.
+Venda — Pagamento:
+Uma venda pode ter um ou mais pagamentos.
+Venda — Item_Venda — Produto:
+Representa os produtos dentro da venda (resolve N:N).
+Produto — Fornecedor:
+Um fornecedor pode fornecer vários produtos.
+Produto — Estoque:
+Cada produto possui um controle de estoque.
+Conclusão
+
+O modelo organiza bem o funcionamento da lojinha, permitindo controle de vendas, produtos e clientes de forma eficiente.

@@ -1,0 +1,31 @@
+Visão Geral
+
+O modelo representa o funcionamento de uma clínica veterinária, controlando clientes, animais, consultas, veterinários, exames e medicamentos.
+
+Entidades
+Cliente
+Animal
+Raça
+Veterinário
+Consulta
+Exame
+Medicamento
+Especialidade
+Relacionamentos
+Cliente — Animal (TEM):
+Um cliente pode ter vários animais, mas cada animal pertence a um cliente.
+Animal — Raça (CLASSIFICA):
+Cada animal pertence a uma única raça.
+Animal — Consulta (FAZ):
+Um animal pode realizar várias consultas.
+Veterinário — Consulta (REALIZA):
+Um veterinário pode realizar várias consultas.
+Consulta — Exame (GERA):
+Uma consulta pode gerar nenhum ou vários exames.
+Consulta — Medicamento (PRESCREVE):
+Uma consulta pode prescrever vários medicamentos.
+Veterinário — Especialidade (POSSUI):
+Um veterinário pode ter várias especialidades.
+Conclusão
+
+O modelo representa bem a estrutura da clínica, permitindo controlar atendimentos, histórico dos animais, exames e tratamentos realizados.

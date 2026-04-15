@@ -1,0 +1,26 @@
+Visão Geral
+
+O modelo representa o funcionamento de um cinema, controlando clientes, pedidos, ingressos, filmes, sessões e salas.
+
+Entidades
+Cliente
+Pedido
+Tipo_Ingresso
+Filme
+Sessão
+Sala
+Relacionamentos
+Cliente — Pedido:
+Um cliente pode realizar vários pedidos, mas cada pedido pertence a um cliente.
+Pedido — Tipo_Ingresso (entidade associativa):
+Representa os ingressos comprados em um pedido.
+Resolve o relacionamento muitos-para-muitos.
+Filme — Sessão:
+Um filme pode ter várias sessões, mas cada sessão exibe um único filme.
+Sessão — Sala:
+Uma sessão ocorre em uma única sala, e uma sala pode ter várias sessões.
+Pedido — Sessão:
+Relaciona o pedido às sessões dos ingressos comprados.
+Conclusão
+
+O modelo organiza bem a estrutura de um cinema, permitindo controlar vendas de ingressos, sessões de filmes e uso das salas.

@@ -1,0 +1,7 @@
+Cliente e Venda (1:N): Um cliente pode realizar várias compras (vendas), mas cada venda no sistema pertence a um único cliente.
+
+Venda e Pagamento (1:N): Uma mesma venda pode ter vários pagamentos (útil para dividir o valor em diferentes métodos, como Pix e cartão), mas cada pagamento refere-se a apenas uma venda.
+
+Produto e Estoque (1:1): Relacionamento direto onde cada produto possui seu próprio registro único de quantidade no estoque.
+
+A Entidade Associativa (Item_venda): Como uma venda tem vários produtos e um produto aparece em várias vendas, essa entidade resolve o cruzamento. Ela salva a quantidade comprada e o preco_unitario no momento exato da transação, mantendo o histórico financeiro intacto.

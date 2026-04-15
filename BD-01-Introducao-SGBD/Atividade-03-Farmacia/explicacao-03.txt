@@ -1,0 +1,23 @@
+📌 Visão Geral
+
+O modelo representa o funcionamento de uma farmácia, envolvendo clientes, vendas, medicamentos e fornecedores.
+
+Entidades
+Cliente
+Venda
+Remédio
+Fornecedor
+Item_Venda (associativa)
+Relacionamentos
+Cliente — Venda (REALIZA):
+Um cliente pode realizar várias vendas, mas cada venda pertence a um único cliente.
+Venda — Item_Venda — Remédio (CONTÉM):
+Representa os medicamentos incluídos em cada venda.
+Resolve o relacionamento muitos-para-muitos entre venda e remédio.
+Fornecedor — Remédio (FORNECE):
+Um fornecedor pode fornecer vários remédios, e cada remédio está associado a fornecedor(es).
+Preço_Fornecedor:
+Atributo do relacionamento que indica o preço do remédio fornecido por cada fornecedor.
+Conclusão
+
+O modelo organiza bem o controle da farmácia, permitindo gerenciar vendas, medicamentos e fornecedores de forma eficiente.
